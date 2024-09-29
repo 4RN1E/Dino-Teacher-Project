@@ -55,11 +55,11 @@ public class UnityAndGeminiV2: MonoBehaviour
      IEnumerator DelayedRequests()
     {
         StartCoroutine(SendRequestToGemini("Hello!"));          //Gemini Request put on Screen
-        animatorController.SetInt("animation,4");               //Changes Animation
+        animatorController.SetInt("animation,1");               //Changes Animation
         audioManager.PlayCorrectSound();                        //Plays Correct Sound
         yield return new WaitForSeconds(5f);                    //Delay between each answer
         StartCoroutine(SendRequestToGemini("Goodbyr!"));
-        animatorController.SetInt("animation,7");
+        animatorController.SetInt("animation,3");
         audioManager.PlayIncorrectSound();                      //Plays Incorrect Sound
 
 
